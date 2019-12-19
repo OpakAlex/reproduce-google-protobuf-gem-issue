@@ -10,5 +10,4 @@ RUN gem update --system
 RUN gem install bundler
 
 RUN CFLAGS="-Wno-cast-function-type" BUNDLE_FORCE_RUBY_PLATFORM=1 bundle install --jobs 20 --retry 5 --path /bundle
-
-RUN ruby -r google/protobuf -e'puts "hello"'
+RUN ruby -r 'bundler/setup' -r 'google/protobuf' -e 'puts "hello"'
