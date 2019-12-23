@@ -10,4 +10,4 @@ source 'https://rubygems.org'
 ruby '2.6.5'
 
 gem "grpc", "1.25.0", platforms: ["ruby"]
-gem "google-protobuf", "3.11.2", platforms: ["ruby"], require: "google/protobuf"
+gem "google-protobuf", "3.9.0", platforms: ["ruby"], require: "google/protobuf"
